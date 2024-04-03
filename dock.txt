@@ -1,0 +1,4 @@
+sudo docker run -p 5050:80 --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=richardilemon@gmail.com -e PGADMIN_DEFAULT_PASSWORD=rorarira*I04 -d dpage/pgadmin4
+
+
+Replace user@domain.com with your desired email address and SuperSecretPassword with your desired password. This command will start a pgAdmin container in detached mode, listening on port 5050 of your host system.

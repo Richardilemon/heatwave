@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: ridata
+      POSTGRES_PASSWORD: Temitope001*
+      POSTGRES_DB: weather
+    ports:
+      - "5433:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: richardilemon@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: rorarira*I04
+    ports:
+      - "8081:80"
